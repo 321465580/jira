@@ -1,6 +1,19 @@
 import React from 'react'
+import { User } from '../../types/user'
 
-function SearchPanel({users, param, setParam}) {
+// 传入参数的类型
+type paramType = {
+    name: string,
+    personId: string
+}
+
+interface SearchPanelProps {
+    users: User[],
+    param: paramType,
+    setParam: (param: paramType) => void
+}
+
+function SearchPanel({users, param, setParam} : SearchPanelProps) {
 
     return (
         <form>

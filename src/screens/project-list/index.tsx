@@ -5,7 +5,6 @@ import { clearObject } from "../../utils";
 import * as qs from 'qs';
 import { useDebounce, useMount } from "../../hooks";
 
-// require('dotenv').config();
 const apiUrl = process.env.REACT_APP_API_URL
 
 function ProjectListScreen() {

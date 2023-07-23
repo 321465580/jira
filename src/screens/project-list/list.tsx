@@ -1,6 +1,12 @@
 import React from 'react'
+import { User } from '../../types/user'
 
-function List({users, list}) {
+interface ListProps {
+    users: User[],
+    list: any[]
+}
+
+function List({users, list}: ListProps) {
   return (
     <table>
         <thead>

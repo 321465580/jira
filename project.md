@@ -13,3 +13,7 @@
 `yarn add qs`
 `import * as qs from 'qs';`
 调用qs.stringify就会自动的把对象的键值对变成，key=123&aa=123
+
+
+## 再次了解泛型
+

@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react"
 
 // 当页面第一次加载的时候去调用的函数
-export const useMount = (callback) => {
+export const useMount = (callback: () => void) => {
     useEffect(() => {
         callback()
     }, [])
 }
 
 // 防抖函数
-export const useDebounce = (value, delay = 300) => {
+export const useDebounce = <V>(value: V, delay = 300) => {
     const [debounceValue, setDebounceValue] = useState(value)
 
     useEffect(() => {
